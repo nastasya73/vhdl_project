@@ -1,0 +1,225 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Wed May 17 09:55:55 2023
+
+drc -z testTop.ncd testTop.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   KB/Read_host/shIFtcnt_not0001 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   KB/Read_host/dataValid_not0001 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   KB/Read_host/startCount_or0000 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   KB/Send/start_sin_clk_not0001 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   KBD_Mod/SendKB/start_sin_clk_not0001 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   KB/Read_host/start_sin_clk_or0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+DRC detected 0 errors and 70 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\xlink\FPGA_2\testTop.ncd
+OUTFILE=D:\xlink\FPGA_2\testTop.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700an-5fgg484
+WORKINGDIR=D:\xlink\FPGA_2
+LICENSE=WebPack
+USER_INFO=212160580_0_0_417

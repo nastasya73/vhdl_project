@@ -1,0 +1,55 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/xlink/FPGA_1_2.0/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to D:/xlink/FPGA_1_2.0/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/xlink/FPGA_1_2.0/Sin_clock.vhd" in Library work.
+Entity <Sin_clock> compiled.
+Entity <Sin_clock> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/xlink/FPGA_1_2.0/SendtoHost.vhd" in Library work.
+Entity <SendtoHost> compiled.
+Entity <SendtoHost> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/xlink/FPGA_1_2.0/Read_from_host.vhd" in Library work.
+Entity <Read_from_host> compiled.
+Entity <Read_from_host> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/xlink/FPGA_1_2.0/CTRL_2.vhd" in Library work.
+Entity <CTRL_2> compiled.
+Entity <CTRL_2> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/xlink/FPGA_1_2.0/KbdFilter.vhd" in Library work.
+Entity <KbdFilter> compiled.
+Entity <KbdFilter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/xlink/FPGA_1_2.0/CORE.vhd" in Library work.
+Entity <CORE> compiled.
+Entity <CORE> (Architecture <Behavioral>) compiled.
+Compiling verilog file "ipcore_dir/IOBuffer.v" in library work
+Module <IOBuffer> compiled
+No errors in compilation
+Analysis of file <"CORE.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> 
+
+Total memory usage is 224732 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

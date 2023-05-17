@@ -1,0 +1,656 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\xlink\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf
+exampleTop.ucf
+
+Design file:              testTop.ncd
+Physical constraint file: testTop.pcf
+Device,package,speed:     xc3s700an,fgg484,-5 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 389922 paths analyzed, 7180 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  15.102ns.
+--------------------------------------------------------------------------------
+
+Paths for end point AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1 (RAMB16_X0Y0.ADDRA8), 528 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     4.898ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES/main3/tmp_49 (FF)
+  Destination:          AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1 (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      15.004ns (Levels of Logic = 9)
+  Clock Path Skew:      -0.098ns (0.585 - 0.683)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AES/main3/tmp_49 to AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y54.XQ      Tcko                  0.521   AES/main3/tmp<49>
+                                                       AES/main3/tmp_49
+    SLICE_X22Y79.G1      net (fanout=128)      3.193   AES/main3/tmp<49>
+    SLICE_X22Y79.F5      Tif5                  0.709   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f55
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output812
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f5_4
+    SLICE_X22Y78.FXINB   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f55
+    SLICE_X22Y78.FX      Tinbfx                0.200   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f54
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f6_1
+    SLICE_X22Y79.FXINA   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f62
+    SLICE_X22Y79.FX      Tinafx                0.200   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f55
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f7_0
+    SLICE_X23Y77.FXINB   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f71
+    SLICE_X23Y77.Y       Tif6y                 0.239   AES/main2/b0<51>
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f8
+    SLICE_X5Y63.G2       net (fanout=7)        2.226   AES/main2/b0<51>
+    SLICE_X5Y63.Y        Tilo                  0.561   AES/main2/m2<106>139
+                                                       AES/main2/en_3/Mxor_w_106_xor0000_Result1
+    SLICE_X5Y63.F4       net (fanout=1)        0.022   AES/main2/en_3/Mxor_w_106_xor0000_Result1/O
+    SLICE_X5Y63.X        Tilo                  0.562   AES/main2/m2<106>139
+                                                       AES/main2/m2<106>139
+    SLICE_X11Y30.F4      net (fanout=1)        1.885   AES/main2/m2<106>139
+    SLICE_X11Y30.X       Tilo                  0.562   AES/main2/m2<106>174
+                                                       AES/main2/m2<106>174
+    SLICE_X2Y31.G1       net (fanout=1)        0.981   AES/main2/m2<106>174
+    SLICE_X2Y31.Y        Tilo                  0.616   AES/main3/tmp<106>
+                                                       AES/main2/m2<106>185
+    SLICE_X2Y31.F1       net (fanout=1)        0.373   AES/main2/m2<106>185/O
+    SLICE_X2Y31.X        Tilo                  0.601   AES/main3/tmp<106>
+                                                       AES/main2/OUTPUT<106>156
+    RAMB16_X0Y0.ADDRA8   net (fanout=1)        1.392   AES/w2<106>
+    RAMB16_X0Y0.CLKA     Trcck_ADDRA           0.161   AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+                                                       AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+    -------------------------------------------------  ---------------------------
+    Total                                     15.004ns (4.932ns logic, 10.072ns route)
+                                                       (32.9% logic, 67.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.898ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES/main3/tmp_49 (FF)
+  Destination:          AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1 (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      15.004ns (Levels of Logic = 9)
+  Clock Path Skew:      -0.098ns (0.585 - 0.683)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AES/main3/tmp_49 to AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y54.XQ      Tcko                  0.521   AES/main3/tmp<49>
+                                                       AES/main3/tmp_49
+    SLICE_X22Y78.G1      net (fanout=128)      3.193   AES/main3/tmp<49>
+    SLICE_X22Y78.F5      Tif5                  0.709   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f54
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output810
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f5_3
+    SLICE_X22Y78.FXINA   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f54
+    SLICE_X22Y78.FX      Tinafx                0.200   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f54
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f6_1
+    SLICE_X22Y79.FXINA   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f62
+    SLICE_X22Y79.FX      Tinafx                0.200   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f55
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f7_0
+    SLICE_X23Y77.FXINB   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f71
+    SLICE_X23Y77.Y       Tif6y                 0.239   AES/main2/b0<51>
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f8
+    SLICE_X5Y63.G2       net (fanout=7)        2.226   AES/main2/b0<51>
+    SLICE_X5Y63.Y        Tilo                  0.561   AES/main2/m2<106>139
+                                                       AES/main2/en_3/Mxor_w_106_xor0000_Result1
+    SLICE_X5Y63.F4       net (fanout=1)        0.022   AES/main2/en_3/Mxor_w_106_xor0000_Result1/O
+    SLICE_X5Y63.X        Tilo                  0.562   AES/main2/m2<106>139
+                                                       AES/main2/m2<106>139
+    SLICE_X11Y30.F4      net (fanout=1)        1.885   AES/main2/m2<106>139
+    SLICE_X11Y30.X       Tilo                  0.562   AES/main2/m2<106>174
+                                                       AES/main2/m2<106>174
+    SLICE_X2Y31.G1       net (fanout=1)        0.981   AES/main2/m2<106>174
+    SLICE_X2Y31.Y        Tilo                  0.616   AES/main3/tmp<106>
+                                                       AES/main2/m2<106>185
+    SLICE_X2Y31.F1       net (fanout=1)        0.373   AES/main2/m2<106>185/O
+    SLICE_X2Y31.X        Tilo                  0.601   AES/main3/tmp<106>
+                                                       AES/main2/OUTPUT<106>156
+    RAMB16_X0Y0.ADDRA8   net (fanout=1)        1.392   AES/w2<106>
+    RAMB16_X0Y0.CLKA     Trcck_ADDRA           0.161   AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+                                                       AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+    -------------------------------------------------  ---------------------------
+    Total                                     15.004ns (4.932ns logic, 10.072ns route)
+                                                       (32.9% logic, 67.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.903ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES/main3/tmp_49 (FF)
+  Destination:          AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1 (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      14.999ns (Levels of Logic = 9)
+  Clock Path Skew:      -0.098ns (0.585 - 0.683)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AES/main3/tmp_49 to AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y54.XQ      Tcko                  0.521   AES/main3/tmp<49>
+                                                       AES/main3/tmp_49
+    SLICE_X22Y78.F1      net (fanout=128)      3.188   AES/main3/tmp<49>
+    SLICE_X22Y78.F5      Tif5                  0.709   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f54
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output89
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f5_3
+    SLICE_X22Y78.FXINA   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f54
+    SLICE_X22Y78.FX      Tinafx                0.200   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f54
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f6_1
+    SLICE_X22Y79.FXINA   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f62
+    SLICE_X22Y79.FX      Tinafx                0.200   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f55
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f7_0
+    SLICE_X23Y77.FXINB   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f71
+    SLICE_X23Y77.Y       Tif6y                 0.239   AES/main2/b0<51>
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output8_f8
+    SLICE_X5Y63.G2       net (fanout=7)        2.226   AES/main2/b0<51>
+    SLICE_X5Y63.Y        Tilo                  0.561   AES/main2/m2<106>139
+                                                       AES/main2/en_3/Mxor_w_106_xor0000_Result1
+    SLICE_X5Y63.F4       net (fanout=1)        0.022   AES/main2/en_3/Mxor_w_106_xor0000_Result1/O
+    SLICE_X5Y63.X        Tilo                  0.562   AES/main2/m2<106>139
+                                                       AES/main2/m2<106>139
+    SLICE_X11Y30.F4      net (fanout=1)        1.885   AES/main2/m2<106>139
+    SLICE_X11Y30.X       Tilo                  0.562   AES/main2/m2<106>174
+                                                       AES/main2/m2<106>174
+    SLICE_X2Y31.G1       net (fanout=1)        0.981   AES/main2/m2<106>174
+    SLICE_X2Y31.Y        Tilo                  0.616   AES/main3/tmp<106>
+                                                       AES/main2/m2<106>185
+    SLICE_X2Y31.F1       net (fanout=1)        0.373   AES/main2/m2<106>185/O
+    SLICE_X2Y31.X        Tilo                  0.601   AES/main3/tmp<106>
+                                                       AES/main2/OUTPUT<106>156
+    RAMB16_X0Y0.ADDRA8   net (fanout=1)        1.392   AES/w2<106>
+    RAMB16_X0Y0.CLKA     Trcck_ADDRA           0.161   AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+                                                       AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+    -------------------------------------------------  ---------------------------
+    Total                                     14.999ns (4.932ns logic, 10.067ns route)
+                                                       (32.9% logic, 67.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1 (RAMB16_X0Y7.ADDRA7), 929 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.134ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES/main3/tmp_120 (FF)
+  Destination:          AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1 (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      13.777ns (Levels of Logic = 9)
+  Clock Path Skew:      -0.089ns (0.446 - 0.535)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AES/main3/tmp_120 to AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y73.XQ      Tcko                  0.495   AES/main3/tmp<120>
+                                                       AES/main3/tmp_120
+    SLICE_X37Y67.F2      net (fanout=126)      2.574   AES/main3/tmp<120>
+    SLICE_X37Y67.F5      Tif5                  0.688   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f57
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output1415
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f5_6
+    SLICE_X37Y66.FXINB   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f57
+    SLICE_X37Y66.FX      Tinbfx                0.202   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f56
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f6_2
+    SLICE_X36Y67.FXINB   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f63
+    SLICE_X36Y67.FX      Tinbfx                0.200   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f55
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f7_0
+    SLICE_X37Y65.FXINB   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f71
+    SLICE_X37Y65.Y       Tif6y                 0.239   AES/main2/b0<120>
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f8
+    SLICE_X26Y24.G4      net (fanout=9)        2.355   AES/main2/b0<120>
+    SLICE_X26Y24.Y       Tilo                  0.616   N482
+                                                       AES/main2/en_3/Mxor_w_19_xor0000_Result1
+    SLICE_X26Y24.F4      net (fanout=2)        0.054   AES/main2/en_3/w_19_xor0000
+    SLICE_X26Y24.X       Tilo                  0.601   N482
+                                                       AES/main2/m2<27>11_SW0
+    SLICE_X27Y30.BX      net (fanout=1)        0.559   N482
+    SLICE_X27Y30.X       Tbxx                  0.627   N668
+                                                       AES/main2/m2<27>34_SW0_f5
+    SLICE_X17Y38.G4      net (fanout=1)        1.015   N668
+    SLICE_X17Y38.Y       Tilo                  0.561   AES/main3/tmp<27>
+                                                       AES/main2/m2<27>34
+    SLICE_X17Y38.F3      net (fanout=1)        0.021   AES/main2/m2<27>34/O
+    SLICE_X17Y38.X       Tilo                  0.562   AES/main3/tmp<27>
+                                                       AES/main2/OUTPUT<27>180
+    RAMB16_X0Y7.ADDRA7   net (fanout=1)        2.247   AES/w2<27>
+    RAMB16_X0Y7.CLKA     Trcck_ADDRA           0.161   AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1
+                                                       AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1
+    -------------------------------------------------  ---------------------------
+    Total                                     13.777ns (4.952ns logic, 8.825ns route)
+                                                       (35.9% logic, 64.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.134ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES/main3/tmp_120 (FF)
+  Destination:          AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1 (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      13.777ns (Levels of Logic = 9)
+  Clock Path Skew:      -0.089ns (0.446 - 0.535)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AES/main3/tmp_120 to AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y73.XQ      Tcko                  0.495   AES/main3/tmp<120>
+                                                       AES/main3/tmp_120
+    SLICE_X37Y66.F2      net (fanout=126)      2.574   AES/main3/tmp<120>
+    SLICE_X37Y66.F5      Tif5                  0.688   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f56
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output1413
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f5_5
+    SLICE_X37Y66.FXINA   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f56
+    SLICE_X37Y66.FX      Tinafx                0.202   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f56
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f6_2
+    SLICE_X36Y67.FXINB   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f63
+    SLICE_X36Y67.FX      Tinbfx                0.200   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f55
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f7_0
+    SLICE_X37Y65.FXINB   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f71
+    SLICE_X37Y65.Y       Tif6y                 0.239   AES/main2/b0<120>
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f8
+    SLICE_X26Y24.G4      net (fanout=9)        2.355   AES/main2/b0<120>
+    SLICE_X26Y24.Y       Tilo                  0.616   N482
+                                                       AES/main2/en_3/Mxor_w_19_xor0000_Result1
+    SLICE_X26Y24.F4      net (fanout=2)        0.054   AES/main2/en_3/w_19_xor0000
+    SLICE_X26Y24.X       Tilo                  0.601   N482
+                                                       AES/main2/m2<27>11_SW0
+    SLICE_X27Y30.BX      net (fanout=1)        0.559   N482
+    SLICE_X27Y30.X       Tbxx                  0.627   N668
+                                                       AES/main2/m2<27>34_SW0_f5
+    SLICE_X17Y38.G4      net (fanout=1)        1.015   N668
+    SLICE_X17Y38.Y       Tilo                  0.561   AES/main3/tmp<27>
+                                                       AES/main2/m2<27>34
+    SLICE_X17Y38.F3      net (fanout=1)        0.021   AES/main2/m2<27>34/O
+    SLICE_X17Y38.X       Tilo                  0.562   AES/main3/tmp<27>
+                                                       AES/main2/OUTPUT<27>180
+    RAMB16_X0Y7.ADDRA7   net (fanout=1)        2.247   AES/w2<27>
+    RAMB16_X0Y7.CLKA     Trcck_ADDRA           0.161   AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1
+                                                       AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1
+    -------------------------------------------------  ---------------------------
+    Total                                     13.777ns (4.952ns logic, 8.825ns route)
+                                                       (35.9% logic, 64.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.135ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES/main3/tmp_120 (FF)
+  Destination:          AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1 (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      13.776ns (Levels of Logic = 9)
+  Clock Path Skew:      -0.089ns (0.446 - 0.535)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AES/main3/tmp_120 to AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y73.XQ      Tcko                  0.495   AES/main3/tmp<120>
+                                                       AES/main3/tmp_120
+    SLICE_X37Y64.F2      net (fanout=126)      2.573   AES/main3/tmp<120>
+    SLICE_X37Y64.F5      Tif5                  0.688   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f52
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output145
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f5_1
+    SLICE_X37Y64.FXINA   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f52
+    SLICE_X37Y64.FX      Tinafx                0.202   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f52
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f6_0
+    SLICE_X36Y65.FXINB   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f61
+    SLICE_X36Y65.FX      Tinbfx                0.200   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f51
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f7
+    SLICE_X37Y65.FXINA   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f7
+    SLICE_X37Y65.Y       Tif6y                 0.239   AES/main2/b0<120>
+                                                       AES/main2/en_1/generate_for_each_byte[15].substitute/Mrom_output14_f8
+    SLICE_X26Y24.G4      net (fanout=9)        2.355   AES/main2/b0<120>
+    SLICE_X26Y24.Y       Tilo                  0.616   N482
+                                                       AES/main2/en_3/Mxor_w_19_xor0000_Result1
+    SLICE_X26Y24.F4      net (fanout=2)        0.054   AES/main2/en_3/w_19_xor0000
+    SLICE_X26Y24.X       Tilo                  0.601   N482
+                                                       AES/main2/m2<27>11_SW0
+    SLICE_X27Y30.BX      net (fanout=1)        0.559   N482
+    SLICE_X27Y30.X       Tbxx                  0.627   N668
+                                                       AES/main2/m2<27>34_SW0_f5
+    SLICE_X17Y38.G4      net (fanout=1)        1.015   N668
+    SLICE_X17Y38.Y       Tilo                  0.561   AES/main3/tmp<27>
+                                                       AES/main2/m2<27>34
+    SLICE_X17Y38.F3      net (fanout=1)        0.021   AES/main2/m2<27>34/O
+    SLICE_X17Y38.X       Tilo                  0.562   AES/main3/tmp<27>
+                                                       AES/main2/OUTPUT<27>180
+    RAMB16_X0Y7.ADDRA7   net (fanout=1)        2.247   AES/w2<27>
+    RAMB16_X0Y7.CLKA     Trcck_ADDRA           0.161   AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1
+                                                       AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1
+    -------------------------------------------------  ---------------------------
+    Total                                     13.776ns (4.952ns logic, 8.824ns route)
+                                                       (35.9% logic, 64.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1 (RAMB16_X0Y0.ADDRA9), 526 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.206ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES/main1/OUTPUT_113 (FF)
+  Destination:          AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1 (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      13.711ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.083ns (0.585 - 0.668)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AES/main1/OUTPUT_113 to AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y76.XQ      Tcko                  0.521   AES/main1/OUTPUT<113>
+                                                       AES/main1/OUTPUT_113
+    SLICE_X2Y70.G1       net (fanout=8)        2.160   AES/main1/OUTPUT<113>
+    SLICE_X2Y70.Y        Tilo                  0.616   AES/main2/OUTPUT<110>61
+                                                       AES/main2/de_3/Mxor_output_Result<14>1
+    SLICE_X8Y80.G2       net (fanout=10)       1.752   AES/main2/d2<113>
+    SLICE_X8Y80.Y        Tilo                  0.616   AES/main2/de_4/w<105>_bdd4
+                                                       AES/main2/de_4/w<105>3_SW0_SW0
+    SLICE_X8Y80.F4       net (fanout=1)        0.035   AES/main2/de_4/w<105>3_SW0_SW0/O
+    SLICE_X8Y80.X        Tilo                  0.601   AES/main2/de_4/w<105>_bdd4
+                                                       AES/main2/de_4/w<105>3
+    SLICE_X1Y65.G3       net (fanout=2)        1.987   AES/main2/de_4/w<105>_bdd4
+    SLICE_X1Y65.Y        Tilo                  0.561   AES/main2/OUTPUT<105>64
+                                                       AES/main2/OUTPUT<105>64_SW0
+    SLICE_X1Y65.F4       net (fanout=1)        0.022   AES/main2/OUTPUT<105>64_SW0/O
+    SLICE_X1Y65.X        Tilo                  0.562   AES/main2/OUTPUT<105>64
+                                                       AES/main2/OUTPUT<105>64
+    SLICE_X2Y65.G2       net (fanout=1)        0.408   AES/main2/OUTPUT<105>64
+    SLICE_X2Y65.Y        Tilo                  0.616   AES/main3/tmp<105>
+                                                       AES/main2/OUTPUT<105>95
+    SLICE_X2Y65.F3       net (fanout=1)        0.021   AES/main2/OUTPUT<105>95/O
+    SLICE_X2Y65.X        Tilo                  0.601   AES/main3/tmp<105>
+                                                       AES/main2/OUTPUT<105>135
+    RAMB16_X0Y0.ADDRA9   net (fanout=1)        2.471   AES/w2<105>
+    RAMB16_X0Y0.CLKA     Trcck_ADDRA           0.161   AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+                                                       AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+    -------------------------------------------------  ---------------------------
+    Total                                     13.711ns (4.855ns logic, 8.856ns route)
+                                                       (35.4% logic, 64.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.254ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1 (RAM)
+  Destination:          AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1 (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      13.651ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.095ns (0.585 - 0.680)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1 to AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X0Y6.DOB6     Trcko_DOWB            2.047   AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1
+                                                       AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1
+    SLICE_X2Y70.G2       net (fanout=7)        0.574   AES/main2/d1<113>
+    SLICE_X2Y70.Y        Tilo                  0.616   AES/main2/OUTPUT<110>61
+                                                       AES/main2/de_3/Mxor_output_Result<14>1
+    SLICE_X8Y80.G2       net (fanout=10)       1.752   AES/main2/d2<113>
+    SLICE_X8Y80.Y        Tilo                  0.616   AES/main2/de_4/w<105>_bdd4
+                                                       AES/main2/de_4/w<105>3_SW0_SW0
+    SLICE_X8Y80.F4       net (fanout=1)        0.035   AES/main2/de_4/w<105>3_SW0_SW0/O
+    SLICE_X8Y80.X        Tilo                  0.601   AES/main2/de_4/w<105>_bdd4
+                                                       AES/main2/de_4/w<105>3
+    SLICE_X1Y65.G3       net (fanout=2)        1.987   AES/main2/de_4/w<105>_bdd4
+    SLICE_X1Y65.Y        Tilo                  0.561   AES/main2/OUTPUT<105>64
+                                                       AES/main2/OUTPUT<105>64_SW0
+    SLICE_X1Y65.F4       net (fanout=1)        0.022   AES/main2/OUTPUT<105>64_SW0/O
+    SLICE_X1Y65.X        Tilo                  0.562   AES/main2/OUTPUT<105>64
+                                                       AES/main2/OUTPUT<105>64
+    SLICE_X2Y65.G2       net (fanout=1)        0.408   AES/main2/OUTPUT<105>64
+    SLICE_X2Y65.Y        Tilo                  0.616   AES/main3/tmp<105>
+                                                       AES/main2/OUTPUT<105>95
+    SLICE_X2Y65.F3       net (fanout=1)        0.021   AES/main2/OUTPUT<105>95/O
+    SLICE_X2Y65.X        Tilo                  0.601   AES/main3/tmp<105>
+                                                       AES/main2/OUTPUT<105>135
+    RAMB16_X0Y0.ADDRA9   net (fanout=1)        2.471   AES/w2<105>
+    RAMB16_X0Y0.CLKA     Trcck_ADDRA           0.161   AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+                                                       AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+    -------------------------------------------------  ---------------------------
+    Total                                     13.651ns (6.381ns logic, 7.270ns route)
+                                                       (46.7% logic, 53.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.717ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES/main3/tmp_52 (FF)
+  Destination:          AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1 (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      13.185ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.098ns (0.585 - 0.683)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AES/main3/tmp_52 to AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y48.XQ      Tcko                  0.521   AES/main3/tmp<52>
+                                                       AES/main3/tmp_52
+    SLICE_X15Y80.BX      net (fanout=64)       3.530   AES/main3/tmp<52>
+    SLICE_X15Y80.F5      Tbxf5                 0.524   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output12_f56
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output12_f5_5
+    SLICE_X15Y80.FXINA   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output12_f56
+    SLICE_X15Y80.FX      Tinafx                0.202   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output12_f56
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output12_f6_2
+    SLICE_X14Y81.FXINB   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output12_f63
+    SLICE_X14Y81.FX      Tinbfx                0.200   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output12_f55
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output12_f7_0
+    SLICE_X15Y79.FXINB   net (fanout=1)        0.000   AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output12_f71
+    SLICE_X15Y79.Y       Tif6y                 0.239   AES/main2/b0<49>
+                                                       AES/main2/en_1/generate_for_each_byte[6].substitute/Mrom_output12_f8
+    SLICE_X9Y64.F2       net (fanout=6)        1.958   AES/main2/b0<49>
+    SLICE_X9Y64.X        Tilo                  0.562   AES/main2/m2<105>139
+                                                       AES/main2/m2<105>139
+    SLICE_X9Y65.G2       net (fanout=1)        0.075   AES/main2/m2<105>139
+    SLICE_X9Y65.Y        Tilo                  0.561   AES/main2/m2<105>
+                                                       AES/main2/m2<105>174
+    SLICE_X9Y65.F2       net (fanout=1)        0.351   AES/main2/m2<105>174/O
+    SLICE_X9Y65.X        Tilo                  0.562   AES/main2/m2<105>
+                                                       AES/main2/m2<105>185
+    SLICE_X2Y65.F2       net (fanout=1)        0.667   AES/main2/m2<105>
+    SLICE_X2Y65.X        Tilo                  0.601   AES/main3/tmp<105>
+                                                       AES/main2/OUTPUT<105>135
+    RAMB16_X0Y0.ADDRA9   net (fanout=1)        2.471   AES/w2<105>
+    RAMB16_X0Y0.CLKA     Trcck_ADDRA           0.161   AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+                                                       AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1
+    -------------------------------------------------  ---------------------------
+    Total                                     13.185ns (4.133ns logic, 9.052ns route)
+                                                       (31.3% logic, 68.7% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+--------------------------------------------------------------------------------
+
+Paths for end point AES/main1/Mram_RAM97 (SLICE_X18Y43.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.557ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               AES/wrk2/tmp_31 (FF)
+  Destination:          AES/main1/Mram_RAM97 (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.583ns (Levels of Logic = 1)
+  Clock Path Skew:      0.026ns (0.324 - 0.298)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: AES/wrk2/tmp_31 to AES/main1/Mram_RAM97
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y43.XQ      Tcko                  0.396   AES/wrk2/tmp<31>
+                                                       AES/wrk2/tmp_31
+    SLICE_X18Y43.BX      net (fanout=4)        0.339   AES/wrk2/tmp<31>
+    SLICE_X18Y43.CLK     Tdh         (-Th)     0.152   AES/main1/OUTPUT<31>
+                                                       AES/main1/Mram_RAM97
+    -------------------------------------------------  ---------------------------
+    Total                                      0.583ns (0.244ns logic, 0.339ns route)
+                                                       (41.9% logic, 58.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point OUTPUT_TEXT_en_81 (SLICE_X29Y47.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.653ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               for_lcd_en_73 (FF)
+  Destination:          OUTPUT_TEXT_en_81 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.818ns (Levels of Logic = 0)
+  Clock Path Skew:      0.165ns (0.838 - 0.673)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: for_lcd_en_73 to OUTPUT_TEXT_en_81
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y48.XQ      Tcko                  0.396   for_lcd_en<73>
+                                                       for_lcd_en_73
+    SLICE_X29Y47.BX      net (fanout=2)        0.360   for_lcd_en<73>
+    SLICE_X29Y47.CLK     Tckdi       (-Th)    -0.062   OUTPUT_TEXT_en<81>
+                                                       OUTPUT_TEXT_en_81
+    -------------------------------------------------  ---------------------------
+    Total                                      0.818ns (0.458ns logic, 0.360ns route)
+                                                       (56.0% logic, 44.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Display/c2/data_in_s_121 (SLICE_X35Y81.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.672ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               for_lcd_121 (FF)
+  Destination:          Display/c2/data_in_s_121 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.745ns (Levels of Logic = 0)
+  Clock Path Skew:      0.073ns (0.344 - 0.271)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: for_lcd_121 to Display/c2/data_in_s_121
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y81.XQ      Tcko                  0.396   for_lcd<121>
+                                                       for_lcd_121
+    SLICE_X35Y81.BX      net (fanout=1)        0.287   for_lcd<121>
+    SLICE_X35Y81.CLK     Tckdi       (-Th)    -0.062   Display/c2/data_in_s<121>
+                                                       Display/c2/data_in_s_121
+    -------------------------------------------------  ---------------------------
+    Total                                      0.745ns (0.458ns logic, 0.287ns route)
+                                                       (61.5% logic, 38.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+--------------------------------------------------------------------------------
+Slack: 16.875ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 3.125ns (320.000MHz) ()
+  Physical resource: KBD_Mod/OBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram/CLKA
+  Logical resource: KBD_Mod/OBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram/CLKA
+  Location pin: RAMB16_X1Y1.CLKA
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 16.875ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 3.125ns (320.000MHz) ()
+  Physical resource: KBD_Mod/OBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram/CLKB
+  Logical resource: KBD_Mod/OBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram/CLKB
+  Location pin: RAMB16_X1Y1.CLKB
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 16.875ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 3.125ns (320.000MHz) ()
+  Physical resource: KBD_Mod/IBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram/CLKA
+  Logical resource: KBD_Mod/IBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram/CLKA
+  Location pin: RAMB16_X1Y3.CLKA
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   15.102|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 389922 paths, 0 nets, and 29054 connections
+
+Design statistics:
+   Minimum period:  15.102ns{1}   (Maximum frequency:  66.216MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed May 17 09:52:33 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 270 MB
+
+
+

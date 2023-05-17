@@ -1,0 +1,206 @@
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 
+xst -intstyle ise -ifn "D:/xlink/FPGA_2/testTop.xst" -ofn "D:/xlink/FPGA_2/testTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc exampleTop.ucf -p xc3s700an-fgg484-5 testTop.ngc testTop.ngd  
+map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+par -w -intstyle ise -ol high -t 1 testTop_map.ncd testTop.ncd testTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml testTop.twx testTop.ncd -o testTop.twr testTop.pcf -ucf exampleTop.ucf 
+bitgen -intstyle ise -f testTop.ut testTop.ncd 

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Jan 17 10:36:16 2022
+# Process ID: 2812
+# Log file: D:/xlink/FPGA_1_2.0/planAhead_run_5/planAhead.log
+# Journal file: D:/xlink/FPGA_1_2.0/planAhead_run_5/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/xlink/FPGA_1_2.0/pa.fromNetlist.tcl
+startgroup 
+create_pblock pblock_1
+resize_pblock pblock_1 -add SLICE_X8Y48:SLICE_X39Y77

@@ -1,0 +1,442 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'testTop'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr
+off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+Target Device  : xc3s700an
+Target Package : fgg484
+Target Speed   : -5
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Wed May 17 09:58:03 2023
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   67
+Logic Utilization:
+  Total Number Slice Registers:       1,688 out of  11,776   14%
+    Number used as Flip Flops:        1,687
+    Number used as Latches:               1
+  Number of 4 input LUTs:             5,369 out of  11,776   45%
+Logic Distribution:
+  Number of occupied Slices:          3,176 out of   5,888   53%
+    Number of Slices containing only related logic:   3,176 out of   3,176 100%
+    Number of Slices containing unrelated logic:          0 out of   3,176   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       5,545 out of  11,776   47%
+    Number used as logic:             5,241
+    Number used as a route-thru:        176
+    Number used as 16x1 RAMs:           128
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 27 out of     372    7%
+  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of RAMB16BWEs:                  12 out of      20   60%
+
+Average Fanout of Non-Clock Nets:                4.61
+
+Peak Memory Usage:  331 MB
+Total REAL time to MAP completion:  4 secs 
+Total CPU time to MAP completion:   4 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   KB/Send/start_sin_clk_not0001 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:367 - The signal <btn_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <btn_1_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network btn_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 5 more times for the following
+   (max. 5 shown):
+   btn_1_IBUF,
+   HOST/IBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.
+   wr/gwss.wsts/ram_full_i,
+   HOST/OBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.
+   wr/gwss.wsts/ram_full_i,
+   KB/IBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr
+   /gwss.wsts/ram_full_i,
+   KB/OBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr
+   /gwss.wsts/ram_full_i
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal clk are pushed forward
+   through input buffer.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   4 block(s) removed
+  10 block(s) optimized away
+   4 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal
+"HOST/IBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr
+/gwss.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"HOST/OBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr
+/gwss.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"KB/IBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wss.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"KB/OBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wss.wsts/ram_full_i" is sourceless and has been removed.
+Unused block
+"HOST/IBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr
+/gwss.wsts/ram_full_i" (FF) removed.
+Unused block
+"HOST/OBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr
+/gwss.wsts/ram_full_i" (FF) removed.
+Unused block
+"KB/IBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wss.wsts/ram_full_i" (FF) removed.
+Unused block
+"KB/OBuffer/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/g
+wss.wsts/ram_full_i" (FF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		HOST/IBuffer/XST_GND
+VCC 		HOST/IBuffer/XST_VCC
+GND 		HOST/OBuffer/XST_GND
+VCC 		HOST/OBuffer/XST_VCC
+GND 		KB/IBuffer/XST_GND
+VCC 		KB/IBuffer/XST_VCC
+GND 		KB/OBuffer/XST_GND
+VCC 		KB/OBuffer/XST_VCC
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| KBClk_1                            | IOB              | BIDIR     | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| KBClk_2                            | IOB              | BIDIR     | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| KBData_1                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| KBData_2                           | IOB              | BIDIR     | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LCD_DATA<0>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LCD_DATA<1>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LCD_DATA<2>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LCD_DATA<3>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LCD_DATA<4>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LCD_DATA<5>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LCD_DATA<6>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LCD_DATA<7>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LED<0>                             | IOB              | OUTPUT    | LVTTL                |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LED<1>                             | IOB              | OUTPUT    | LVTTL                |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LED<2>                             | IOB              | OUTPUT    | LVTTL                |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LED<3>                             | IOB              | OUTPUT    | LVTTL                |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LED<4>                             | IOB              | OUTPUT    | LVTTL                |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LED<5>                             | IOB              | OUTPUT    | LVTTL                |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LED<6>                             | IOB              | OUTPUT    | LVTTL                |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| LED<7>                             | IOB              | OUTPUT    | LVTTL                |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| btn                                | IBUF             | INPUT     | LVTTL                |       |          |         |              | PULLDOWN | 0 / 0    |                  |
+| btn_1                              | IBUF             | INPUT     | LVTTL                |       |          |         |              | PULLDOWN | 0 / 0    |                  |
+| clk                                | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| lcd_e                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| lcd_rs                             | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| lcd_rw                             | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| rst                                | IBUF             | INPUT     | LVTTL                |       |          |         |              | PULLDOWN | 0 / 0    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

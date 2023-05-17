@@ -1,0 +1,118 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Jan 17 10:11:24 2022
+# Process ID: 5772
+# Log file: D:/xlink/FPGA_1_2.0/planAhead_run_1/planAhead.log
+# Journal file: D:/xlink/FPGA_1_2.0/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/xlink/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/xlink/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/xlink/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/xlink/FPGA_1_2.0/pa.fromNetlist.tcl
+# create_project -name FPGA_1_2.0 -dir "D:/xlink/FPGA_1_2.0/planAhead_run_2" -part xc3s700anfgg484-5
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/xlink/FPGA_1_2.0/testTop.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/xlink/FPGA_1_2.0} {ipcore_dir} }
+# add_files [list {ipcore_dir/IOBuffer.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "exampleTop.ucf" [current_fileset -constrset]
+Adding file 'D:/xlink/FPGA_1_2.0/exampleTop.ucf' to fileset 'constrs_1'
+# add_files [list {exampleTop.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s700anfgg484-5
+WARNING: [Common 17-175] Failed to make directory to contain cached edif files [D:/xlink/FPGA_1_2.0/planAhead_run_2/FPGA_1_2.0.data/cache]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design testTop.ngc ...
+WARNING:NetListWriters:298 - No output is written to testTop.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus AES/input_reg/tmp<127 : 0> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/main2/en_3/xtm<123 : 3> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/main2/m2<124 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/s2<95 : 0> on block testTop is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/wrk0/Rcon_column_1st_element<7 : 2>
+   on block testTop is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Display/data<7 : 0> on block testTop is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Display/lcd_bus<9 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Display/lcd_bus_mux0000<9 : 0> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus INPUT_TEXT<127 : 0> on block testTop is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus KB/Send/cnt_end<9 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus KB/Send/cnt_end_mux0000<11 : 2> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file testTop.edif ...
+ngc2edif: Total memory usage is 97256 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-5772-Sanek/ngc2edif/testTop.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-5772-Sanek/ngc2edif/testTop.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design IOBuffer.ngc ...
+WARNING:NetListWriters:298 - No output is written to IOBuffer.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2 : 0> on block
+   IOBuffer is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file IOBuffer.edif ...
+ngc2edif: Total memory usage is 78632 kilobytes
+
+Reading core file 'D:/xlink/FPGA_1_2.0/ipcore_dir/IOBuffer.ngc' for (cell view 'IOBuffer', library 'testTop_lib', file 'testTop.ngc')
+Parsing EDIF File [./planAhead_run_2/FPGA_1_2.0.data/cache/IOBuffer_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/FPGA_1_2.0.data/cache/IOBuffer_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library D:/xlink/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn
+Parsing EDIF File [D:/xlink/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn]
+Finished Parsing EDIF File [D:/xlink/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn]
+WARNING: [Netlist 29-43] Netlist 'testTop' is not ideal for floorplanning, since the cellview 'testTop' defined in file 'testTop.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from D:/xlink/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700an/ClockRegion.xml
+Loading clock buffers from D:/xlink/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700an/ClockBuffers.xml
+Loading package from D:/xlink/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700an/fgg484/Package.xml
+Loading io standards from D:/xlink/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from D:/xlink/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700an/fgg484/SSORules.xml
+Loading list of drcs for the architecture : D:/xlink/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/drc.xml
+INFO: [Timing 38-77] Reading timing library D:/xlink/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/spartan3a-5.lib.
+INFO: [Timing 38-34] Done reading timing library D:/xlink/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/spartan3a-5.lib.
+Parsing UCF File [D:/xlink/FPGA_1_2.0/ipcore_dir/IOBuffer.ncf]
+Finished Parsing UCF File [D:/xlink/FPGA_1_2.0/ipcore_dir/IOBuffer.ncf]
+Parsing UCF File [D:/xlink/FPGA_1_2.0/ipcore_dir/IOBuffer.ncf]
+Finished Parsing UCF File [D:/xlink/FPGA_1_2.0/ipcore_dir/IOBuffer.ncf]
+Parsing UCF File [D:/xlink/FPGA_1_2.0/ipcore_dir/IOBuffer.ncf]
+Finished Parsing UCF File [D:/xlink/FPGA_1_2.0/ipcore_dir/IOBuffer.ncf]
+Parsing UCF File [D:/xlink/FPGA_1_2.0/ipcore_dir/IOBuffer.ncf]
+Finished Parsing UCF File [D:/xlink/FPGA_1_2.0/ipcore_dir/IOBuffer.ncf]
+Parsing UCF File [D:/xlink/FPGA_1_2.0/exampleTop.ucf]
+Finished Parsing UCF File [D:/xlink/FPGA_1_2.0/exampleTop.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 3ea4efdf
+link_design: Time (s): elapsed = 00:00:11 . Memory (MB): peak = 605.516 ; gain = 155.328
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See D:/xlink/FPGA_1_2.0\planAhead_pid5772.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Jan 17 10:21:23 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

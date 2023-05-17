@@ -1,0 +1,5 @@
+set -tmpdir "D:/xlink/FPGA_1_2.0/xst/projnav.tmp"
+set -xsthdpdir "D:/xlink/FPGA_1_2.0/xst"
+elaborate
+-ifn CORE.prj
+-ifmt mixed

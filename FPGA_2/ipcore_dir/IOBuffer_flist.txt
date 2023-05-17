@@ -1,0 +1,24 @@
+# Output products list for <IOBuffer>
+IOBuffer.asy
+IOBuffer.gise
+IOBuffer.ngc
+IOBuffer.sym
+IOBuffer.v
+IOBuffer.veo
+IOBuffer.xco
+IOBuffer.xise
+IOBuffer_flist.txt
+IOBuffer_ste\example_design\IOBuffer_top.ucf
+IOBuffer_ste\example_design\IOBuffer_top.vhd
+IOBuffer_ste\example_design\IOBuffer_top.xdc
+IOBuffer_ste\implement\implement.bat
+IOBuffer_ste\implement\implement.sh
+IOBuffer_ste\implement\planAhead_rdn.bat
+IOBuffer_ste\implement\planAhead_rdn.sh
+IOBuffer_ste\implement\planAhead_rdn.tcl
+IOBuffer_ste\implement\xst.prj
+IOBuffer_ste\implement\xst.scr
+IOBuffer_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+fifo_generator_ug175.pdf
+fifo_generator_v8_2_readme.txt

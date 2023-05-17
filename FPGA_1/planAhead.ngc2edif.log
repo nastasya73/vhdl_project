@@ -1,0 +1,240 @@
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design testTop.ngc ...
+WARNING:NetListWriters:298 - No output is written to testTop.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus AES/input_reg/tmp<127 : 0> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/main2/en_3/xtm<123 : 3> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/main2/m2<124 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/s2<95 : 0> on block testTop is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/wrk0/Rcon_column_1st_element<7 : 2>
+   on block testTop is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Display/data<7 : 0> on block testTop is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Display/lcd_bus<9 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Display/lcd_bus_mux0000<9 : 0> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus INPUT_TEXT<127 : 0> on block testTop is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus KB/Send/cnt_end<9 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus KB/Send/cnt_end_mux0000<11 : 2> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file testTop.edif ...
+ngc2edif: Total memory usage is 97256 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design testTop.ngc ...
+WARNING:NetListWriters:298 - No output is written to testTop.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus AES/input_reg/tmp<127 : 0> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/main2/en_3/xtm<123 : 3> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/main2/m2<124 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/s2<95 : 0> on block testTop is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/wrk0/Rcon_column_1st_element<7 : 2>
+   on block testTop is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Display/data<7 : 0> on block testTop is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Display/lcd_bus<9 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Display/lcd_bus_mux0000<9 : 0> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus INPUT_TEXT<127 : 0> on block testTop is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus KB/Send/cnt_end<9 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus KB/Send/cnt_end_mux0000<11 : 2> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file testTop.edif ...
+ngc2edif: Total memory usage is 96680 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design IOBuffer.ngc ...
+WARNING:NetListWriters:298 - No output is written to IOBuffer.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2 : 0> on block
+   IOBuffer is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file IOBuffer.edif ...
+ngc2edif: Total memory usage is 78696 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design IOBuffer.ngc ...
+WARNING:NetListWriters:298 - No output is written to IOBuffer.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2 : 0> on block
+   IOBuffer is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file IOBuffer.edif ...
+ngc2edif: Total memory usage is 78632 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design testTop.ngc ...
+WARNING:NetListWriters:298 - No output is written to testTop.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus AES/input_reg/tmp<127 : 0> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/main2/en_3/xtm<123 : 3> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/main2/m2<124 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/s2<95 : 0> on block testTop is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/wrk0/Rcon_column_1st_element<7 : 2>
+   on block testTop is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Display/data<7 : 0> on block testTop is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Display/lcd_bus<9 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Display/lcd_bus_mux0000<9 : 0> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus INPUT_TEXT<127 : 0> on block testTop is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus KB/Send/cnt_end<9 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus KB/Send/cnt_end_mux0000<11 : 2> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file testTop.edif ...
+ngc2edif: Total memory usage is 96552 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design IOBuffer.ngc ...
+WARNING:NetListWriters:298 - No output is written to IOBuffer.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2 : 0> on block
+   IOBuffer is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file IOBuffer.edif ...
+ngc2edif: Total memory usage is 78632 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design testTop.ngc ...
+WARNING:NetListWriters:298 - No output is written to testTop.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus AES/input_reg/tmp<127 : 0> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/main2/en_3/xtm<123 : 3> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/main2/m2<124 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/s2<95 : 0> on block testTop is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/wrk0/Rcon_column_1st_element<7 : 2>
+   on block testTop is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Display/data<7 : 0> on block testTop is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Display/lcd_bus<9 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Display/lcd_bus_mux0000<9 : 0> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus INPUT_TEXT<127 : 0> on block testTop is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus KB/Send/cnt_end<9 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus KB/Send/cnt_end_mux0000<11 : 2> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file testTop.edif ...
+ngc2edif: Total memory usage is 96680 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design IOBuffer.ngc ...
+WARNING:NetListWriters:298 - No output is written to IOBuffer.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2 : 0> on block
+   IOBuffer is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file IOBuffer.edif ...
+ngc2edif: Total memory usage is 78760 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design testTop.ngc ...
+WARNING:NetListWriters:298 - No output is written to testTop.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus AES/input_reg/tmp<127 : 0> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/main2/en_3/xtm<123 : 3> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/main2/m2<124 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/s2<95 : 0> on block testTop is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus AES/wrk0/Rcon_column_1st_element<7 : 2>
+   on block testTop is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Display/data<7 : 0> on block testTop is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Display/lcd_bus<9 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Display/lcd_bus_mux0000<9 : 0> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus INPUT_TEXT<127 : 0> on block testTop is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus KB/Send/cnt_end<9 : 0> on block testTop
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus KB/Send/cnt_end_mux0000<11 : 2> on block
+   testTop is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file testTop.edif ...
+ngc2edif: Total memory usage is 96680 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design IOBuffer.ngc ...
+WARNING:NetListWriters:298 - No output is written to IOBuffer.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2 : 0> on block
+   IOBuffer is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file IOBuffer.edif ...
+ngc2edif: Total memory usage is 78952 kilobytes
+

@@ -1,0 +1,6 @@
+vhdl work "D:\xlink\FPGA_1_2.0\Sin_clock.vhd"
+vhdl work "D:\xlink\FPGA_1_2.0\SendtoHost.vhd"
+vhdl work "D:\xlink\FPGA_1_2.0\Read_from_host.vhd"
+vhdl work "D:\xlink\FPGA_1_2.0\KbdFilter.vhd"
+vhdl work "D:\xlink\FPGA_1_2.0\CTRL_2.vhd"
+vhdl work "D:\xlink\FPGA_1_2.0\CORE.vhd"

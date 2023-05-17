@@ -1,0 +1,231 @@
+#:C98    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   D:\xlink\FPGA_1_2.0
+#Date/Time:
+#:T   Mon Jan 17 10:29:47 2022
+#------------------------------
+	#Reading testTop_map.ncd...
+	#Loading device for application Rf_Device from file '3s700a.nph' in environment D:\xlink\14.7\ISE_DS\ISE\.
+	#   "testTop" is an NCD, version 3.2, device xc3s700an, package fgg484, speed -5
+	#Design creation date: 2022.01.16.16.27.33
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+hilite -c steel_blue
+	#WARNING:FPGAEditor:48 - Nothing to hilite -- there is nothing selected.
+	#3
+select -k comp 'data_exit_lcd'
+	#4
+hilite -c tan
+	#5
+getattr
+	#+++ Attributes for comp 'data_exit_lcd'
+	#Name = data_exit_lcd
+	#Type = SLICEL
+	#Des = UNPLACED
+	#Locate = OFF:::
+	#Tig = OFF:
+	#Config = CLKINV:CLK DYMUX:1 F:#LUT:D=(~A1*(~A2*A3)) FFY:#FF FFY_INIT_ATTR:INIT0 FFY_SR_ATTR:SRLOW FXMUX:F G:#LUT:D=(A1*(A2*A3)) GYMUX:G SRINV:SR SYNC_ATTR:ASYNC XUSED:0
+	#F = (~A1*(~A2*A3))
+	#G = (A1*(A2*A3))
+	#6
+unselect -all
+	#7
+unselect -all
+	#8
+hilite -c alice_blue
+	#WARNING:FPGAEditor:48 - Nothing to hilite -- there is nothing selected.
+	#9
+select -k comp 'AES/ouput_reg/tmp<93>'
+	#10
+unselect comp 'AES/ouput_reg/tmp<93>'
+	#11
+select -k comp 'AES/main2/en_1/generate_for_each_byte[11].substitute/Mrom_output8_f57'
+	#12
+hilite -c yellow_green
+	#13
+unselect comp 'AES/main2/en_1/generate_for_each_byte[11].substitute/Mrom_output8_f57'
+	#14
+select -k comp 'AES/ouput_reg/tmp<93>'
+	#15
+hilite -c yellow
+	#16
+hilite -c dark_cyan
+	#17
+post ila
+	#Building all ILA Capture Units ...
+	#18
+unpost ila
+	#19
+setattr main disable_draw on
+	#20
+setattr layer switch_boxes view on
+	#21
+setattr main disable_draw off
+	#Hint: change the visibility of more than one layer at a time by clicking on the apply button, clicking two or more layer buttons, and then clicking on the apply button again.
+	#22
+setattr main disable_draw on
+	#23
+setattr layer switch_boxes view off
+	#24
+setattr main disable_draw off
+	#25
+setattr main disable_draw on
+	#26
+setattr layer switch_boxes view on
+	#27
+setattr main disable_draw off
+	#28
+refresh
+	#29
+refresh
+	#30
+setattr main disable_draw on
+	#31
+setattr layer clock_regions view on
+	#32
+setattr main disable_draw off
+	#33
+setattr main disable_draw on
+	#34
+setattr layer clock_regions view off
+	#35
+setattr main disable_draw off
+	#36
+setattr main disable_draw on
+	#37
+setattr layer ratsnests view on
+	#38
+setattr main disable_draw off
+	#39
+setattr main disable_draw on
+	#40
+setattr layer ratsnests view off
+	#41
+setattr main disable_draw off
+	#42
+setattr main disable_draw on
+	#43
+setattr layer ratsnests view on
+	#44
+setattr main disable_draw off
+	#45
+setattr main disable_draw on
+	#46
+setattr layer ratsnests view off
+	#47
+setattr main disable_draw off
+	#48
+setattr main disable_draw on
+	#49
+setattr layer routes view on
+	#50
+setattr main disable_draw off
+	#51
+setattr main disable_draw on
+	#52
+setattr layer routes view off
+	#53
+setattr main disable_draw off
+	#54
+setattr main disable_draw on
+	#55
+setattr layer switch_boxes view off
+	#56
+setattr main disable_draw off
+	#57
+setattr main disable_draw on
+	#58
+setattr layer switch_boxes view on
+	#59
+setattr main disable_draw off
+	#60
+setattr main disable_draw on
+	#61
+setattr layer sites view off
+	#62
+setattr main disable_draw off
+	#63
+setattr main disable_draw on
+	#64
+setattr layer sites view on
+	#65
+setattr main disable_draw off
+	#66
+setattr main disable_draw on
+	#67
+setattr layer sites view off
+	#68
+setattr main disable_draw off
+	#69
+setattr main disable_draw on
+	#70
+setattr layer pinwires view on
+	#71
+setattr main disable_draw off
+	#72
+setattr main disable_draw on
+	#73
+setattr layer pinwires view off
+	#74
+setattr main disable_draw off
+	#75
+setattr main disable_draw on
+	#76
+setattr layer long_lines view on
+	#77
+setattr main disable_draw off
+	#78
+setattr main disable_draw on
+	#79
+setattr layer long_lines view off
+	#80
+setattr main disable_draw off
+	#81
+setattr main disable_draw on
+	#82
+setattr layer local_lines view on
+	#83
+setattr main disable_draw off
+	#84
+setattr main disable_draw on
+	#85
+setattr layer local_lines view off
+	#86
+setattr main disable_draw off
+	#87
+post block
+	#88
+post block
+	#89
+add
+	#WARNING:FPGAEditor:131 - The selection contains objects that are being ignored by the add command.
+	#WARNING:FPGAEditor:132 - The add command did not find anything to add.
+	#90
+post attr
+	#91
+unpost comp "AES/ouput_reg/tmp<93>"
+	#92
+unselect -all
+	#93
+unselect -all
+	#94
+unselect -all
+	#95
+unselect -all
+	#96
+unselect -all
+	#97
+route -fanout
+	#ERROR:FPGAEditor:565 - There is no net in the selection. Please select a net to manual route.
+	#98
+swap
+	#ERROR:FPGAEditor:409 - Nothing found to swap.
+	#99
+unroute
+	#ERROR:FPGAEditor:645 - Nothing to unroute.  You must select an item before executing the unroute command.

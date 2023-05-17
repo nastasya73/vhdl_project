@@ -1,0 +1,290 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'testTop'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s700an-fgg484-5 -cm area -ir off -pr
+off -c 100 -o testTop_map.ncd testTop.ngd testTop.pcf 
+Target Device  : xc3s700an
+Target Package : fgg484
+Target Speed   : -5
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Wed May 17 09:51:48 2023
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   KB/Read_host/shIFtcnt_not0001 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   KB/Read_host/dataValid_not0001 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   KB/Read_host/startCount_or0000 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   KB/Send/start_sin_clk_not0001 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   KBD_Mod/SendKB/start_sin_clk_not0001 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   KB/Read_host/start_sin_clk_or0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[15].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[5].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[7].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[9].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[11].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[1].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[13].substitute/Mrom_output1>:<RA
+   MB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<AES/main2/de_2/generate_for_each_byte[2].substitute/Mrom_output1>:<RAM
+   B16BWE_RAMB16BWE>.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   70
+Logic Utilization:
+  Total Number Slice Registers:       1,947 out of  11,776   16%
+    Number used as Flip Flops:        1,931
+    Number used as Latches:              16
+  Number of 4 input LUTs:             5,722 out of  11,776   48%
+Logic Distribution:
+  Number of occupied Slices:          3,380 out of   5,888   57%
+    Number of Slices containing only related logic:   3,380 out of   3,380 100%
+    Number of Slices containing unrelated logic:          0 out of   3,380   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       5,879 out of  11,776   49%
+    Number used as logic:             5,593
+    Number used as a route-thru:        157
+    Number used as 16x1 RAMs:           128
+    Number used as Shift registers:       1
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 27 out of     372    7%
+  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of RAMB16BWEs:                  12 out of      20   60%
+
+Average Fanout of Non-Clock Nets:                4.45
+
+Peak Memory Usage:  332 MB
+Total REAL time to MAP completion:  10 secs 
+Total CPU time to MAP completion:   5 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "testTop_map.mrp" for details.

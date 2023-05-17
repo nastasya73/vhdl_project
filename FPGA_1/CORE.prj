@@ -1,0 +1,7 @@
+vhdl work "Sin_clock.vhd"
+vhdl work "SendtoHost.vhd"
+vhdl work "Read_from_host.vhd"
+vhdl work "KbdFilter.vhd"
+verilog work "ipcore_dir/IOBuffer.v"
+vhdl work "CTRL_2.vhd"
+vhdl work "CORE.vhd"
